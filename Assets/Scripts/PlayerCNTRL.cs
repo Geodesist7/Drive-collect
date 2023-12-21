@@ -15,7 +15,7 @@ public class CameraMove : MonoBehaviour
     }
     private void Update()
     {
-        if (_moveRight) transform.Translate(0.03f, 0, 0);
-        if (_moveLeft) transform.Translate(-0.03f, 0, 0);
+        if (_moveRight) transform.Translate(0.05f, 0, 0);
+        if (_moveLeft) transform.Translate(-0.05f, 0, 0);
     }
 }
