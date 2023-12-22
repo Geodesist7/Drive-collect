@@ -8,5 +8,6 @@ public class Player : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         _roadSpawner.Spawn();
+
     }
 }

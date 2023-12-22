@@ -13,6 +13,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: road_sign_crosswalk Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 5390649932541883209, guid: b3ea278cf3d63a446a6ee979eb36fece,
+        type: 3}
+      propertyPath: m_TagString
+      value: sign
+      objectReference: {fileID: 0}
     - target: {fileID: 8976859697805164890, guid: b3ea278cf3d63a446a6ee979eb36fece,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -78,7 +83,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4753828735917156781, guid: b3ea278cf3d63a446a6ee979eb36fece, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -86,6 +92,14 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 3673692270495658240}
+    - targetCorrespondingSourceObject: {fileID: 5390649932541883209, guid: b3ea278cf3d63a446a6ee979eb36fece,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -5494821219067990692}
+    - targetCorrespondingSourceObject: {fileID: 5390649932541883209, guid: b3ea278cf3d63a446a6ee979eb36fece,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -4925669305527141867}
   m_SourcePrefab: {fileID: 100100000, guid: b3ea278cf3d63a446a6ee979eb36fece, type: 3}
 --- !u!1 &4541942431613829153 stripped
 GameObject:
@@ -106,3 +120,45 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _signSpeed: 20
+--- !u!65 &-5494821219067990692
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4541942431613829153}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.1469679, y: 0.65680027, z: 0.677751}
+  m_Center: {x: 0.02233701, y: -0.000000014901161, z: 0.0049917116}
+--- !u!65 &-4925669305527141867
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4541942431613829153}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.1469679, y: 0.65680027, z: 0.677751}
+  m_Center: {x: 0.02233701, y: -0.000000014901161, z: 0.0049917116}
