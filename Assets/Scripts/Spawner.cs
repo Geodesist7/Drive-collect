@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class Spawner : MonoBehaviour
 {
-    [SerializeField] private GameObject sign;
+    [SerializeField] private GameObject[] sign;
 
     private void Start()
     {
@@ -12,7 +13,7 @@ public class Spawner : MonoBehaviour
     }
     private void Spawn() 
     {
-        Instantiate(sign);
-        sign.transform.position = new Vector3(Random.Range(05, 10), -1, 100);
+        var s = Instantiate(sign[Random.Range(0,sign.Length)]);
+        s.transform.position = new Vector3(Random.Range(-4f, 5.5f), 2, 100);
     }
 }

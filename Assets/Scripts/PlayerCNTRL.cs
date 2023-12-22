@@ -1,21 +1,18 @@
 using UnityEngine;
 
-public class CameraMove : MonoBehaviour
+public class PlayerCNTRL : MonoBehaviour
 {
-    private bool _moveRight, _moveLeft;
-
-    public void MoverR(bool moveRight)
+    [SerializeField] private float _speed = 1f;
+    private int w;
+    private void Start()
     {
-        _moveRight = moveRight;
-    }
-    
-    public void MoverL(bool moveLeft)
-    {
-        _moveLeft = moveLeft;
+        w = Screen.width/2;
     }
     private void Update()
     {
-        if (_moveRight) transform.Translate(0.05f, 0, 0);
-        if (_moveLeft) transform.Translate(-0.05f, 0, 0);
+        if (Input.GetMouseButton(0)) 
+        {
+            transform.Translate(Input.mousePosition.x >w ? _speed * Time.deltaTime:-_speed * Time.deltaTime, 0, 0);
+        }
     }
 }

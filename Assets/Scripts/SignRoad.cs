@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class SignRoad : MonoBehaviour
 {
-    private float _signSpeed;
-    private void Update()
+
+    [SerializeField] private float _signSpeed;
+    private void FixedUpdate()
     {
-        _signSpeed += 0.003f;
-        transform.Translate(_signSpeed, 0, 0);
+        
+        transform.Translate(_signSpeed * Time.fixedDeltaTime, 0, 0);
     }
 }
