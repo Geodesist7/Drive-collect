@@ -25,8 +25,13 @@ public class PlayerCNTRL : MonoBehaviour
         if (other.gameObject.tag == "sign")
         {
             score++;
-            Destroy(other.gameObject);
-            scoreText.text = "Score: " + score;
         }
+        else if (other.gameObject.tag == "badcar")
+        {
+            score--;
+        }
+        Destroy(other.gameObject);
+        scoreText.text = "Score: " + score;
+
     }
 }
